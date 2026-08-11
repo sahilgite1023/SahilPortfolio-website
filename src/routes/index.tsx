@@ -3,6 +3,7 @@ import { ArrowUpRight, Download, Mail } from "lucide-react";
 
 import heroArt from "@/assets/hero-grid.jpg";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
+import { GitHubProjectsSection } from "@/components/github-projects";
 import { SectionLabel } from "@/components/site-chrome";
 import {
   certificates,
@@ -122,7 +123,29 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-20">
-        <SectionLabel n="02">Experience</SectionLabel>
+        <SectionLabel n="02">Selected work</SectionLabel>
+        <div className="grid gap-px bg-border md:grid-cols-3">
+          {projects.map((p) => (
+            <Link
+              key={p.title}
+              to="/projects"
+              className="group bg-background p-7 transition-colors hover:bg-surface"
+            >
+              <span className="font-mono text-xs text-accent">{p.index}</span>
+              <h3 className="mt-4 font-display text-2xl font-semibold leading-tight">{p.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.summary}</p>
+              <span className="mt-6 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-foreground group-hover:text-accent">
+                Read more <ArrowUpRight className="size-3.5" />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <GitHubProjectsSection />
+
+      <section className="mx-auto max-w-6xl px-5 pb-20">
+        <SectionLabel n="04">Experience</SectionLabel>
         <div className="space-y-px bg-border">
           {experience.map((e) => (
             <article
@@ -148,27 +171,7 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-20">
-        <SectionLabel n="03">Selected work</SectionLabel>
-        <div className="grid gap-px bg-border md:grid-cols-3">
-          {projects.map((p) => (
-            <Link
-              key={p.title}
-              to="/projects"
-              className="group bg-background p-7 transition-colors hover:bg-surface"
-            >
-              <span className="font-mono text-xs text-accent">{p.index}</span>
-              <h3 className="mt-4 font-display text-2xl font-semibold leading-tight">{p.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.summary}</p>
-              <span className="mt-6 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-foreground group-hover:text-accent">
-                Read more <ArrowUpRight className="size-3.5" />
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 pb-20">
-        <SectionLabel n="04">Education</SectionLabel>
+        <SectionLabel n="05">Education</SectionLabel>
         <div className="space-y-px bg-border">
           {education.map((e) => (
             <div
@@ -189,7 +192,7 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-20">
-        <SectionLabel n="05">Wins & certifications</SectionLabel>
+        <SectionLabel n="06">Wins & certifications</SectionLabel>
         <div className="grid gap-px bg-border lg:grid-cols-2">
           <ul className="space-y-3 bg-background p-7 text-sm text-muted-foreground">
             {wins.map((w) => (
@@ -238,3 +241,4 @@ function Index() {
     </>
   );
 }
+
