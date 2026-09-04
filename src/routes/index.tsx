@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Download, Mail } from "lucide-react";
 
 import heroArt from "@/assets/hero-grid.jpg";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
+import resumeUrl from "@/assets/resume.pdf";
 import { GitHubProjectsSection } from "@/components/github-projects";
 import { SectionLabel } from "@/components/site-chrome";
 import {
@@ -72,7 +72,7 @@ function Index() {
               <Mail className="size-4" /> Hire me
             </Link>
             <a
-              href={resumeAsset.url}
+              href={resumeUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 border border-border px-5 py-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-accent hover:text-accent"
