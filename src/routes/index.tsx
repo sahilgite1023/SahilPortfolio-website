@@ -20,7 +20,7 @@ import {
 
 const title = "Sahil Gite — Full Stack Developer & AI/ML Builder";
 const description =
-  "MCA student in Nashik shipping MERN web products and AI/ML systems. Internships, projects, certifications and contact details for recruiters.";
+  "Full stack developer in Nashik shipping MERN web products and AI/ML systems. Internships, projects, certifications and contact details for recruiters.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

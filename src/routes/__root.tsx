@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Portfolio of Sahil Gite, MCA student and full stack developer in Nashik building MERN products and AI/ML systems.",
+          "Portfolio of Sahil Gite, full stack developer in Nashik building MERN products and AI/ML systems.",
       },
       { name: "author", content: "Sahil Gite" },
       { property: "og:title", content: "Sahil Gite — Full Stack Developer & AI/ML" },

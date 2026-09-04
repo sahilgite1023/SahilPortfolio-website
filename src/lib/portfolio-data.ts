@@ -2,7 +2,7 @@ export const profile = {
   name: "Sahil Gite",
   role: "Full Stack Developer · AI/ML Enthusiast",
   tagline:
-    "MCA student building web products end to end — and teaching machines to see, read and classify.",
+    "Full stack developer building web products end to end — and teaching machines to see, read and classify.",
   email: "sahilgite511@gmail.com",
   phone: "+91 93737 82446",
   location: "Nashik, Maharashtra, India",
@@ -15,7 +15,7 @@ export const stats = [
   { value: "2", label: "Internships" },
   { value: "3+", label: "Shipped projects" },
   { value: "6", label: "Hackathons" },
-  { value: "8.27", label: "MCA SGPA" },
+  { value: "7.92", label: "BCA CGPA" },
 ];
 
 export const stack = [
@@ -128,12 +128,6 @@ export const projects = [
 ];
 
 export const education = [
-  {
-    degree: "Master of Computer Applications",
-    school: "K. K. Wagh Institute of Engineering Education & Research, Nashik",
-    when: "2025 – Present",
-    score: "SGPA 8.27",
-  },
   {
     degree: "Bachelor of Computer Applications",
     school: "Sandip University, Nashik",
