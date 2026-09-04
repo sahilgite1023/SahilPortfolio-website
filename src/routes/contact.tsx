@@ -24,7 +24,7 @@ const links = [
   { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/sahilgite", href: profile.linkedin },
   { icon: Github, label: "GitHub", value: "github.com/sahilgite1023", href: profile.github },
-  { icon: Globe, label: "Website", value: "sahilgite.netlify.app", href: profile.site },
+  { icon: Globe, label: "Website", value: "sahil-gite.netlify.app", href: profile.site },
 ];
 
 function ContactPage() {

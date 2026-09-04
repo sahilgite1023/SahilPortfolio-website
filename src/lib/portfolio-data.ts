@@ -6,7 +6,7 @@ export const profile = {
   email: "sahilgite511@gmail.com",
   phone: "+91 93737 82446",
   location: "Nashik, Maharashtra, India",
-  site: "https://sahilgite.netlify.app",
+  site: "https://sahil-gite.netlify.app/",
   github: "https://github.com/sahilgite1023",
   linkedin: "https://bit.ly/4cJuNwG",
 };
